@@ -1,0 +1,12 @@
+{
+  "sourceRecipes": 373,
+  "curatedRecipes": 5,
+  "fullOriginalsVerified": 373,
+  "steps": 3531,
+  "photos": 347,
+  "categoryTotal": 373,
+  "excluded": [
+    "dishes/template/示例菜/示例菜.md"
+  ],
+  "errors": []
+}

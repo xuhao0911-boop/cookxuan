@@ -1,0 +1,5 @@
+import fs from 'node:fs';import path from 'node:path';import {createRequire} from 'node:module';const require=createRequire(import.meta.url);const sharp=require('C:/Users/Administrator/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp');const root=path.resolve(import.meta.dirname,'../dist/assets');
+for(const name of ['hero','dishes','steps-noodles'])await sharp(path.join(root,name+'.png')).resize({width:1400,height:1400,fit:'inside',withoutEnlargement:true}).webp({quality:86}).toFile(path.join(root,name+'.webp'));
+const logo='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="120" fill="#b95036"/><path d="M145 126v99c0 59 88 59 88 0v-99m-44 0v260M346 126c-102 114-89 203 0 203V126Zm0 203v57" fill="none" stroke="#fff6df" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+for(const size of [180,192,512])await sharp(Buffer.from(logo)).resize(size,size).png().toFile(path.join(root,'icon-'+size+'.png'));
+console.log('WebP food assets and three app icons prepared.');

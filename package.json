@@ -1,0 +1,1 @@
+{"name":"cookxuan-mobile","version":"2.0.0","private":true,"type":"module","scripts":{"start":"node server.mjs","check":"node --check dist/app.js && node --check dist/sw.js","import":"node scripts/import-howtocook.mjs"},"devDependencies":{"sharp":"0.35.5"}}

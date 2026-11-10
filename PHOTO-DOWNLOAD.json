@@ -1,0 +1,10 @@
+{
+  "total": 348,
+  "downloaded": 347,
+  "errors": [
+    {
+      "file": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1yBdnK.img?w=768&h=512&m=6",
+      "message": "HTTP 404"
+    }
+  ]
+}
