@@ -3,7 +3,7 @@
 const R=window.CookXuanReading,D=window.COOKXUAN_CATALOG,recipe=D.recipes.find(r=>r.id===R.example),params=new URLSearchParams(location.search);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const icon=name=>`<svg aria-hidden="true"><use href="#${name}"/></svg>`;
-const cover='../'+recipe.cover,hero='../assets/hero.webp';
+const cover='../'+recipe.cover,hero='../assets/hero.webp.webp';
 const selected=['a','b','c'].includes(params.get('style'))?params.get('style'):null;
 let screen=params.get('screen')==='home'?'home':'cook',mobileStyle=selected||'b';
 const states=Object.fromEntries(['a','b','c'].map(style=>[style,{stage:0,item:0,checks:new Set()}]));
